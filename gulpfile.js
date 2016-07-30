@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var concat      = require('gulp-concat');
+var ghPages     = require('gulp-gh-pages')
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -85,3 +86,10 @@ gulp.task('default', ['browser-sync',  'watch']);
 
 /* Production Build */
 gulp.task('build', ['jekyll-build', 'sass']);
+
+gulp.task('deploy', ['build'], function(){
+  return gulp.src('./_site/**/*')
+    .pipe(ghPages({
+      branch: "master"
+    }))
+});
