@@ -1,0 +1,21 @@
+{
+  "name": "casimcdaniels.github.io",
+  "homepage": "casimcdaniels.com",
+  "description": "personal website",
+  "main": "",
+  "authors": [
+    "Casi McDaniels"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.0"
+  }
+}

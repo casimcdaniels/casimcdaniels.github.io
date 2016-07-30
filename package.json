@@ -1,0 +1,33 @@
+{
+  "name": "casimcdaniels.github.io",
+  "version": "1.0.0",
+  "description": "personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gulp build && git subtree push --prefix _site origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casimcdaniels/casimcdaniels.github.io.git"
+  },
+  "author": "Casi McDaniels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/casimcdaniels/casimcdaniels.github.io/issues"
+  },
+  "homepage": "https://github.com/casimcdaniels/casimcdaniels.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-liquid": "^0.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-shell": "^0.5.2"
+  }
+}

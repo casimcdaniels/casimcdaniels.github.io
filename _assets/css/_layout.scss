@@ -1,0 +1,35 @@
+/*  Site Elements */
+
+.site-footer {
+    height: 40px;
+    background-color: $background-color;
+
+}
+
+.splash {
+  height: 100%;
+  display: flex;
+}
+
+//    Splash      //
+
+
+#intro {
+  align-self: center;
+  margin: auto;
+}
+
+#avatar {
+  width: 200px;
+  margin: 5px auto;
+}
+
+#greeting {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#title {
+  text-align: center;
+  color: hsl(240, 6%, 40%);
+}
