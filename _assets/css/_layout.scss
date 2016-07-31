@@ -9,27 +9,48 @@
 .splash {
   height: 100%;
   display: flex;
+
+  #intro {
+    align-self: center;
+    margin: auto;
+  }
+
+  #avatar {
+    width: 200px;
+    margin: 5px auto;
+  }
+
+  #greeting {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  #title {
+    text-align: center;
+    color: hsl(240, 6%, 40%);
+  }
 }
 
 //    Splash      //
 
 
-#intro {
-  align-self: center;
+
+
+
+/* Section Blog */
+
+#blog {
+  width: 100%;
+}
+
+/* Wrappers */
+
+.container {
+  width: 80%;
   margin: auto;
+
 }
 
-#avatar {
-  width: 200px;
-  margin: 5px auto;
-}
-
-#greeting {
-  text-align: center;
-  margin-bottom: 0;
-}
-
-#title {
-  text-align: center;
-  color: hsl(240, 6%, 40%);
+.wrapper {
+  width: 100%;
 }

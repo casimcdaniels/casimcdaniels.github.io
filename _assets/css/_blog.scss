@@ -1,0 +1,53 @@
+/* Styling for blogs */
+
+.blog-post {
+  padding: 50px 0px;
+  border-bottom: solid 1px $background-color-dark;
+
+  .blog-post-header {
+    margin-bottom: 20px;
+
+  }
+
+  .blog-post-title {
+
+    font-weight:bold;
+    font-size: 1.8em;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  .blog-post-category {
+    display: inline-block;
+    background-color: hsl(356, 45%, 53%);
+    padding: 0px 15px;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .blog-post-date {
+    display: inline-block;
+    font-size: 1.2em;
+    color: hsl(240, 6%, 40%);
+    margin-bottom: none;
+  }
+
+
+
+  &:last-of-type {        // Don't need one at the last item
+    border-bottom: none;
+  }
+}
+
+
+/* Category Tag Colors */
+.blog-post-category {
+  &.red {
+    background-color: hsl(356, 45%, 53%);
+  }
+
+  &.blue {
+    background-color: hsl(235, 46%, 56%);
+  }
+}
