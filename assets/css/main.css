@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@font-face {
+  font-family: Inconsolata;
+  src: url("../fonts/Inconsolata-Regular.ttf"); }
+
 /**
  * Reset some basic elements
  */
@@ -72,10 +75,8 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: white;
   text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
   a:hover {
     color: #ededed;
     text-decoration: underline; }
@@ -159,7 +160,57 @@ html, body {
   .icon > svg path {
     fill: #828282; }
 
+/**
+ * Links and Buttons
+ */
+a {
+  color: #ededed; }
+  a.fancy-link, .site-header nav ul li a.nav-link.current {
+    padding: 5px 15px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: solid 2px transparent;
+    text-decoration: none; }
+    a.fancy-link.green, .site-header nav ul li a.green.nav-link.current {
+      border: solid 2px #3ad99a;
+      color: #3ad99a; }
+    a.fancy-link.red, .site-header nav ul li a.red.nav-link.current {
+      border: solid 2px #d73737;
+      color: #d73737; }
+    a.fancy-link.purple, .site-header nav ul li a.purple.nav-link.current {
+      border: solid 2px #804eca;
+      color: #804eca; }
+    a.fancy-link.blue, .site-header nav ul li a.blue.nav-link.current {
+      border: solid 2px #347fd5;
+      color: #347fd5; }
+
 /*  Site Elements */
+/**
+ *
+ * Site Header and Navigation Bar
+ */
+.site-header {
+  height: 80px;
+  padding: 10px 10%;
+  background: #262631; }
+  .site-header .avatar {
+    height: 100%;
+    width: auto;
+    display: inline-block; }
+  .site-header nav {
+    display: inline-block; }
+    .site-header nav ul {
+      margin: 0; }
+      .site-header nav ul li {
+        display: inline;
+        margin-left: 25px; }
+        .site-header nav ul li .nav-link {
+          padding: 5px 10px;
+          -webkit-border-radius: 3px;
+                  border-radius: 3px;
+          color: white;
+          border: solid 2px transparent; }
+
 .site-footer {
   height: 40px;
   background-color: #282834; }
