@@ -163,8 +163,8 @@ html, body {
   opacity: 0; }
 
 .wf-active {
-  -webkit-transition: .2 opacity;
-  transition: .2 opacity; }
+  -webkit-transition: .3 opacity;
+  transition: .3 opacity; }
 
 /**
  * Links and Buttons
