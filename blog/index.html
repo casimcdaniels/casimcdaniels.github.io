@@ -2,6 +2,14 @@
 <html>
 
   <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Inconsolata']
+      }
+    });
+  </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,14 +18,13 @@
   <meta name="description" content="Casi McDaniels - Web Developer and Designer">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   <link rel="shortcut icon" type="image/png" href=" /assets/images/favicon.png">
-
 </head>
 
 
   <body>
 
     <header class="site-header">
-  <img class="avatar" src="../assets/images/avatar.svg">
+  <div class="avatar"><a href="/"><img src="../assets/images/avatar.svg"></div></div>
   <nav class="site-nav">
     <ul>
 
@@ -25,7 +32,7 @@
       
 
       <li>
-          <a href="/" class="nav-link green " title="">home</a>
+          <a href="/work/" class="nav-link green " title="">work</a>
       </li>
       
 
@@ -53,43 +60,6 @@
     <section id="blog">
   <div class="container">
     
-      <div class="blog-post">
-        <header class="blog-post-header">
-          <div>
-            <h1 class="blog-post-title">Creating an organized react.js project structure</h1>
-            <div class="blog-post-category
-              
-            "></div>
-          </div>
-          <h2 class="blog-post-date">August 04, 2016</h2>
-        </header>
-        <div class="blog-post-content">
-          <p>If you haven’t heard of ReactJS, it’s an amazing way to build frontend web applications. The library, created by some great people over at facebook, is built upon the View component within the MVC architecture.</p>
-
-<p>Anyways, you wanna get started with building applications in ReactJS, but you’re having trouble making a clean workspace? No worries, I’ll help you out.</p>
-
-<p>To begin. Let’s create a project directory and enter it.</p>
-
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>mkdir project
-<span class="nb">cd </span>project
-</code></pre>
-</div>
-
-<p>We want our project to be organized in a more <em>reactive</em> way. so let’s go ahead and think about the structure needed. We want to separate our root directory into three primary folders, components, pages, and assets.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>project
-  components/
-    - app.js
-  assets/
-    - css/
-    - js/
-  index.html
-</code></pre>
-</div>
-
-        </div>
-      </div>
-      
   </div>
 </section>
 
