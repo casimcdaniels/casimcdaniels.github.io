@@ -3,10 +3,6 @@
 // Third Party Libraries //
 @import "breakpoint-sass/stylesheets/breakpoint";
 
-// Load Fonts //
-@import "fonts";
-
-
 // Our variables
 $base-font-family: "Inconsolata", monospace;
 $base-font-size:   16px;
@@ -25,6 +21,12 @@ $brand-color:      #2a7ae2;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+
+$green-vibrant: hsl(156, 70%, 47%);
+$purple-vibrant: hsl(264, 54%, 55%);
+$red-vibrant: hsl(0, 67%, 53%);
+$blue-vibrant: hsl(212, 66%, 52%);
 
 // Width of the content area
 $content-width:    800px;
@@ -53,7 +55,7 @@ $desktop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
+        "theme",
         "syntax-highlighting",
         "blog"
 ;

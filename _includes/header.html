@@ -1,2 +1,16 @@
 <header class="site-header">
+  <div class="avatar"><a href="/"><img src="../assets/images/avatar.svg"></div></div>
+  <nav class="site-nav">
+    <ul>
+
+      {% assign url = page.url | remove:'.html' %}
+      {% for link in layout.navigation %}
+
+      <li>
+          <a href="{{link.url}}" class="nav-link {{link.color}} {% if url == link.url %}current{% endif %}" title="{{link.title}}">{{link.text}}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </nav>
 </header>

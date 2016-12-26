@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: splash
 ---
 
 <div class="splash">
@@ -9,27 +9,3 @@ layout: default
     <h3 id="title">Web Developer & Designer</span></h3>
   </div>
 </div>
-<section id="blog">
-  <div class="container">
-    {% for post in site.posts %}
-      <div class="blog-post">
-        <header class="blog-post-header">
-          <div>
-            <h1 class="blog-post-title">{{ post.title }}</h1>
-            <div class="blog-post-category
-              {% if post.category  == "personal" %}
-                red
-              {% elsif post.category == "dev" %}
-                blue
-              {% endif %}
-            ">{{ post.category }}</div>
-          </div>
-          <h2 class="blog-post-date">{{ post.date | date: '%B %d, %Y' }}</h2>
-        </header>
-        <div class="blog-post-content">
-          {{ post.content }}
-        </div>
-      </div>
-      {% endfor %}
-  </div>
-</section>

@@ -1,0 +1,140 @@
+/**
+ * Links and Buttons
+ */
+
+a {
+  color: $text-color;
+
+  &.fancy-link {
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: solid 2px transparent;
+    text-decoration: none;
+
+    &.green {
+      border: solid 2px $green-vibrant;
+      color: $green-vibrant;
+    }
+
+    &.red {
+      border: solid 2px $red-vibrant;
+      color: $red-vibrant;
+    }
+
+    &.purple {
+      border: solid 2px $purple-vibrant;
+      color: $purple-vibrant;
+    }
+
+    &.blue {
+      border: solid 2px $blue-vibrant;
+      color: $blue-vibrant;
+    }
+
+  }
+}
+
+
+
+$site-padding: 10%;
+
+/*  Site Elements */
+
+/**
+ *
+ * Site Header and Navigation Bar
+ */
+
+.site-header {
+  height: 80px;
+  padding: 10px $site-padding;
+  background: darken($background-color, 1%);
+
+  .avatar {
+    height: 100%;
+    width: 50px;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+    display: inline-block;
+  }
+
+  nav {
+    display: inline-block;
+    ul {
+      list-style-type:none;
+      li {
+        display: inline-block;
+        text-align: center;
+
+        .nav-link {
+          padding: 5px 15px;
+          border-radius: 3px;
+          color: white;
+          border: solid 2px darken($background-color, 1%);
+
+          &.current {
+            @extend .fancy-link;
+
+          }
+        }
+      }
+    }
+  }
+}
+.site-footer {
+    height: 40px;
+    background-color: $background-color;
+
+}
+
+.splash {
+  height: 100%;
+  display: flex;
+
+  #intro {
+    align-self: center;
+    margin: auto;
+  }
+
+  #avatar {
+    width: 200px;
+    margin: 5px auto;
+  }
+
+  #greeting {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  #title {
+    text-align: center;
+    color: hsl(240, 6%, 40%);
+  }
+}
+
+//    Splash      //
+
+
+
+
+
+/* Section Blog */
+
+#blog {
+  width: 100%;
+}
+
+/* Wrappers */
+
+.container {
+  width: 80%;
+  margin: auto;
+
+}
+
+.wrapper {
+  width: 100%;
+}

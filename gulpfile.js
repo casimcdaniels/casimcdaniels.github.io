@@ -6,6 +6,7 @@ var cp          = require('child_process');
 var concat      = require('gulp-concat');
 var ghPages     = require('gulp-gh-pages')
 
+
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -37,6 +38,7 @@ gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], function() {
         }
     });
 });
+
 
 /**
  * Compile files from _assets/css into both _site/assets/css (for live injecting) and assets/css (for future jekyll builds)
