@@ -20,11 +20,9 @@ body {
   background-color: #282834;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   -webkit-font-kerning: normal;
-     -moz-font-kerning: normal;
           font-kerning: normal; }
 
 /**
@@ -233,6 +231,7 @@ a {
   .splash #intro {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
             align-self: center;
     margin: auto; }
   .splash #avatar {
